@@ -1,11 +1,38 @@
+import { io } from "socket.io-client";
 import { apiSlice } from "../api/apiSlice";
 import { messagesApi } from "../messages/messagesApi";
+import socket from "../../utils/socketInstance";
 
 export const conversationsApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getConversations: builder.query({
-      query: (email) =>
-        `/conversations?participants_like=${email}&_sort=timestamp&_order=desc&_page=1&_limit=${process.env.REACT_APP_CONVERSATIONS_PER_PAGE}`,
+      query: (email) => `/conversations?participants_like=${email}&_sort=timestamp&_order=desc&_page=1&_limit=${process.env.REACT_APP_CONVERSATIONS_PER_PAGE}`,
+      async onCacheEntryAdded(
+        arg,
+        { updateCachedData, cacheDataLoaded, cacheEntryRemoved }
+      ) {
+        try {
+          await cacheDataLoaded;
+          socket.on("conversation", (data) => {
+            updateCachedData(draft => {
+              const conversation = draft.find(c => c.id == data?.data?.id);
+
+              if (conversation?.id) {
+                conversation.message = data?.data?.message;
+                conversation.timestamp = data?.data?.timestamp;
+              } else {
+                conversation.message = data?.data?.message || "";
+                conversation.timestamp = data?.data?.timestamp || new Date.getTime();
+                socket.close();
+              }
+
+            })
+          });
+        } catch (err) { }
+
+        await cacheEntryRemoved;
+        socket.close();
+      },
     }),
     getConversation: builder.query({
       query: ({ userEmail, participantEmail }) =>
@@ -17,29 +44,6 @@ export const conversationsApi = apiSlice.injectEndpoints({
         method: "POST",
         body: data,
       }),
-      async onQueryStarted(arg, { queryFulfilled, dispatch }) {
-        const conversation = await queryFulfilled;
-        if (conversation?.data?.id) {
-          // silent entry to message table
-          const users = arg.data.users;
-          const senderUser = users.find(
-            (user) => user.email === arg.sender
-          );
-          const receiverUser = users.find(
-            (user) => user.email !== arg.sender
-          );
-
-          dispatch(
-            messagesApi.endpoints.addMessage.initiate({
-              conversationId: conversation?.data?.id,
-              sender: senderUser,
-              receiver: receiverUser,
-              message: arg.data.message,
-              timestamp: arg.data.timestamp,
-            })
-          );
-        }
-      },
     }),
     editConversation: builder.mutation({
       query: ({ id, data, sender }) => ({
@@ -49,7 +53,7 @@ export const conversationsApi = apiSlice.injectEndpoints({
       }),
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         // optimistic cache update start
-        const pathResult1 = dispatch(
+        const pathResult = dispatch(
           apiSlice.util.updateQueryData(
             "getConversations",
             arg.sender,
@@ -76,7 +80,7 @@ export const conversationsApi = apiSlice.injectEndpoints({
               (user) => user.email !== arg.sender
             );
 
-            dispatch(
+            const res = await dispatch(
               messagesApi.endpoints.addMessage.initiate({
                 conversationId: conversation?.data?.id,
                 sender: senderUser,
@@ -84,10 +88,22 @@ export const conversationsApi = apiSlice.injectEndpoints({
                 message: arg.data.message,
                 timestamp: arg.data.timestamp,
               })
+            ).unwrap();
+
+            // update messages catche pessimistically start
+            dispatch(
+              apiSlice.util.updateQueryData(
+                "getMessages",
+                res.conversationId.toString(),
+                (draft) => {
+                  draft.push(res);
+                }
+              )
             );
+            // update messages catche pessimistically end
           }
         } catch (err) {
-          pathResult1.undo();
+          pathResult.undo();
         }
       },
     }),
