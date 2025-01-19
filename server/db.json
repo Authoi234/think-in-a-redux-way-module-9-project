@@ -23,6 +23,60 @@
       "password": "$2a$10$46NI1oAv.vM/EpZlzys.ee/g0tUi14JDVY0HI.C/yASMg52VFOcBu",
       "name": "Saad Hasan",
       "id": 5
+    },
+    {
+      "email": "jaber.ahmed4770@gmail.com",
+      "password": "$2a$10$PuS4Q58BL0sUqAz.buIBIefDEe6yO6DNCox6vxDgJSdw/goOEDSV2",
+      "name": "Jaber Ahmed",
+      "id": 6
+    },
+    {
+      "email": "bagha@aubbu.com",
+      "password": "$2a$10$p19FZ4nWdpgnVrzRWm8wJOwY8d/2UZXBJKmYATPVnckcjK30gLz.e",
+      "name": "Gias Uddin Khan Shekul",
+      "id": 7
+    },
+    {
+      "email": "jankarMahbub@programming-hero.com",
+      "password": "$2a$10$TWhN.9P1kUyyucKnvUsTRO1iKBVGJ9n5sPn8g9awXNPzRjEbMNw8y",
+      "name": "Jhankar Mahbub",
+      "id": 8
+    },
+    {
+      "email": "IssacAli@gmail.com",
+      "password": "$2a$10$MogFqT4yvqCqo73ul6yiXuyENlkAiDORLifPSPWP3Zgrx5t62k5xG",
+      "name": "Newton",
+      "id": 9
+    },
+    {
+      "email": "einstein@yahoo.com",
+      "password": "$2a$10$We/3XVGaOR8y4Fmv0VTawuy3hr327mmQnniN77bS6K01u3BoMthtu",
+      "name": "Albert Einstein",
+      "id": 10
+    },
+    {
+      "email": "pythagoras@yahoo.com",
+      "password": "$2a$10$RWJGyLr0mV7hIydnN4Xt1u6LFRwbr8iwvNNsDQYgbSZgxIghY44fC",
+      "name": "Pythagoras",
+      "id": 11
+    },
+    {
+      "email": "test1@test.com",
+      "password": "$2a$10$I/riCH9kat3vgIXkQTzeZuf3Fz0NGJYhK/JxWSe6wNrsfo3dK9EiC",
+      "name": "test 1",
+      "id": 12
+    },
+    {
+      "email": "test2@test.com",
+      "password": "$2a$10$uJZ.lCjZ8ng9vRuqv1ORherOciOxVixKLSNqK6NRQzwjtAs6Cp2RK",
+      "name": "test 2",
+      "id": 13
+    },
+    {
+      "email": "test3@test.com",
+      "password": "$2a$10$ZGDFVTrbWWYkDfMWgUJtLeOKmLbU8JAY.WJ25KhVnXxW/m.971dxW",
+      "name": "test 3",
+      "id": 14
     }
   ],
   "conversations": [
@@ -62,6 +116,210 @@
       ],
       "message": "Making videos, Btw, I am fine, ",
       "timestamp": 1737289150182
+    },
+    {
+      "participants": "jawadkhan.authoi@gmail.com-saad@learnwithsumit.com",
+      "users": [
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "name": "Authoi",
+          "id": 1
+        },
+        {
+          "email": "saad@learnwithsumit.com",
+          "password": "$2a$10$46NI1oAv.vM/EpZlzys.ee/g0tUi14JDVY0HI.C/yASMg52VFOcBu",
+          "name": "Saad Hasan",
+          "id": 5
+        }
+      ],
+      "message": "HELLO",
+      "timestamp": 1737296090719,
+      "id": 3
+    },
+    {
+      "participants": "jawadkhan.authoi@gmail.com-akash@learnwithsumit.com",
+      "users": [
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "name": "Authoi",
+          "id": 1
+        },
+        {
+          "email": "akash@learnwithsumit.com",
+          "password": "$2a$10$mKN4KAdw1zkeXCvxTpNgj.mUxt6EVjdhLhG.I37grBWokAC0jPiC2",
+          "name": "Akash Ahmed",
+          "id": 2
+        }
+      ],
+      "message": "bird were pooping                                                                                                      \n                    In the sky                                                                                                                                                              Every bird was in same Group                                                                                               \n                    No One Lie",
+      "timestamp": 1737296238751,
+      "id": 4
+    },
+    {
+      "participants": "test1@test.com-jawadkhan.authoi@gmail.com",
+      "users": [
+        {
+          "email": "test1@test.com",
+          "name": "test 1",
+          "id": 12
+        },
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+          "name": "Authoi",
+          "id": 1
+        }
+      ],
+      "message": "hey",
+      "timestamp": 1737302812232,
+      "id": 5
+    },
+    {
+      "participants": "jawadkhan.authoi@gmail.com-bagha@aubbu.com",
+      "users": [
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "name": "Authoi",
+          "id": 1
+        },
+        {
+          "email": "bagha@aubbu.com",
+          "name": "Gias Uddin Khan Shekul",
+          "id": 7
+        }
+      ],
+      "message": "Yes.. I am doing.",
+      "timestamp": 1737299127867,
+      "id": 6
+    },
+    {
+      "participants": "jawadkhan.authoi@gmail.com-jankarMahbub@programming-hero.com",
+      "users": [
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "name": "Authoi",
+          "id": 1
+        },
+        {
+          "email": "jankarMahbub@programming-hero.com",
+          "password": "$2a$10$TWhN.9P1kUyyucKnvUsTRO1iKBVGJ9n5sPn8g9awXNPzRjEbMNw8y",
+          "name": "Jhankar Mahbub",
+          "id": 8
+        }
+      ],
+      "message": "i am doing sir",
+      "timestamp": 1737305595972,
+      "id": 7
+    },
+    {
+      "participants": "jawadkhan.authoi@gmail.com-IssacAli@gmail.com",
+      "users": [
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "name": "Authoi",
+          "id": 1
+        },
+        {
+          "email": "IssacAli@gmail.com",
+          "name": "Newton",
+          "id": 9
+        }
+      ],
+      "message": "means grade",
+      "timestamp": 1737299073227,
+      "id": 8
+    },
+    {
+      "participants": "jawadkhan.authoi@gmail.com-einstein@yahoo.com",
+      "users": [
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "name": "Authoi",
+          "id": 1
+        },
+        {
+          "email": "einstein@yahoo.com",
+          "name": "Albert Einstein",
+          "id": 10
+        }
+      ],
+      "message": "dont make me mad at this age",
+      "timestamp": 1737298908226,
+      "id": 9
+    },
+    {
+      "participants": "jawadkhan.authoi@gmail.com-pythagoras@yahoo.com",
+      "users": [
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "name": "Authoi",
+          "id": 1
+        },
+        {
+          "email": "pythagoras@yahoo.com",
+          "name": "Pythagoras",
+          "id": 11
+        }
+      ],
+      "message": "gimme time",
+      "timestamp": 1737299029050,
+      "id": 10
+    },
+    {
+      "participants": "test1@test.com-jawadkhan.authoi@gmail.com",
+      "users": [
+        {
+          "email": "test1@test.com",
+          "name": "test 1",
+          "id": 12
+        },
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+          "name": "Authoi",
+          "id": 1
+        }
+      ],
+      "message": "test 1",
+      "timestamp": 1737302741032,
+      "id": 11
+    },
+    {
+      "participants": "test2@test.com-jawadkhan.authoi@gmail.com",
+      "users": [
+        {
+          "email": "test2@test.com",
+          "name": "test 2",
+          "id": 13
+        },
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+          "name": "Authoi",
+          "id": 1
+        }
+      ],
+      "message": "test 2",
+      "timestamp": 1737302887448,
+      "id": 12
+    },
+    {
+      "participants": "jawadkhan.authoi@gmail.com-test3@test.com",
+      "users": [
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "name": "Authoi",
+          "id": 1
+        },
+        {
+          "email": "test3@test.com",
+          "name": "test 3",
+          "id": 14
+        }
+      ],
+      "message": "test 4",
+      "timestamp": 1737305499669,
+      "id": 13
     }
   ],
   "messages": [
@@ -451,6 +709,417 @@
       "message": "Making videos, Btw, I am fine, ",
       "timestamp": 1737289150182,
       "id": 24
+    },
+    {
+      "conversationId": 5,
+      "sender": {
+        "email": "jaber.ahmed4770@gmail.com",
+        "name": "Jaber Ahmed",
+        "id": 6
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "Hey, Do your Work.",
+      "timestamp": 1737296775504,
+      "id": 25
+    },
+    {
+      "conversationId": 6,
+      "sender": {
+        "email": "bagha@aubbu.com",
+        "name": "Gias Uddin Khan Shekul",
+        "id": 7
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "Authoi, Do your work, other wise \"SLAP\"",
+      "timestamp": 1737296998768,
+      "id": 26
+    },
+    {
+      "conversationId": 7,
+      "sender": {
+        "email": "jankarMahbub@programming-hero.com",
+        "name": "Jhankar Mahbub",
+        "id": 8
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "Get ready for phitron",
+      "timestamp": 1737297798305,
+      "id": 27
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "write them 100 times  (v=u+at), (s=ut+½at²), and (v²=u²+2as)",
+      "timestamp": 1737298022993,
+      "id": 28
+    },
+    {
+      "conversationId": 9,
+      "sender": {
+        "email": "einstein@yahoo.com",
+        "name": "Albert Einstein",
+        "id": 10
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "Imagine a chat application inspired by the principles of relativity and the equation E=mc². In this digital space, users can engage in conversations that transcend time and distance, reflecting the interconnectedness of the universe. Each message exchanged carries energy, akin to mass being converted into energy, illustrating how communication can transform thoughts into impactful ideas. The app could feature real-time interactions that mimic the relativistic effects of time dilation, allowing users to experience conversations at varying speeds, thus deepening their understanding of relativity while fostering a unique social experience.",
+      "timestamp": 1737298317890,
+      "id": 29
+    },
+    {
+      "conversationId": 10,
+      "sender": {
+        "email": "pythagoras@yahoo.com",
+        "name": "Pythagoras",
+        "id": 11
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "write 1000 times, A²+B²=C². then solve\n this problem ,  A landscaper is designing a triangular flower bed. The triangle's dimensions are as follows:\n\nOne leg of the triangle measures 18 meters.\nThe second leg of the triangle measures 24 meters.\nThe landscaper wants to calculate the length of the hypotenuse, the perimeter, and the area of the triangular bed.",
+      "timestamp": 1737298794802,
+      "id": 30
+    },
+    {
+      "conversationId": 9,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "einstein@yahoo.com",
+        "name": "Albert Einstein",
+        "id": 10
+      },
+      "message": "Forgive me",
+      "timestamp": 1737298887947,
+      "id": 31
+    },
+    {
+      "conversationId": 9,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "einstein@yahoo.com",
+        "name": "Albert Einstein",
+        "id": 10
+      },
+      "message": "I am a baby",
+      "timestamp": 1737298892106,
+      "id": 32
+    },
+    {
+      "conversationId": 9,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "einstein@yahoo.com",
+        "name": "Albert Einstein",
+        "id": 10
+      },
+      "message": "dont make me mad at this age",
+      "timestamp": 1737298908226,
+      "id": 33
+    },
+    {
+      "conversationId": 10,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "pythagoras@yahoo.com",
+        "name": "Pythagoras",
+        "id": 11
+      },
+      "message": "i dont reached at this chapter in math book",
+      "timestamp": 1737299026083,
+      "id": 34
+    },
+    {
+      "conversationId": 10,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "pythagoras@yahoo.com",
+        "name": "Pythagoras",
+        "id": 11
+      },
+      "message": "gimme time",
+      "timestamp": 1737299029050,
+      "id": 35
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "Forgive me",
+      "timestamp": 1737299042155,
+      "id": 36
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "Any apple or coconuts not fell in my head",
+      "timestamp": 1737299054962,
+      "id": 37
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "So gimme time to grow up ",
+      "timestamp": 1737299062491,
+      "id": 38
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "and go to upper class",
+      "timestamp": 1737299067531,
+      "id": 39
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "means grade",
+      "timestamp": 1737299073227,
+      "id": 40
+    },
+    {
+      "conversationId": 7,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "jankarMahbub@programming-hero.com",
+        "name": "Jhankar Mahbub",
+        "id": 8
+      },
+      "message": "yes",
+      "timestamp": 1737299107227,
+      "id": 41
+    },
+    {
+      "conversationId": 7,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "jankarMahbub@programming-hero.com",
+        "name": "Jhankar Mahbub",
+        "id": 8
+      },
+      "message": "First i comeplete think in a redux way course",
+      "timestamp": 1737299118995,
+      "id": 42
+    },
+    {
+      "conversationId": 6,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "bagha@aubbu.com",
+        "name": "Gias Uddin Khan Shekul",
+        "id": 7
+      },
+      "message": "Yes.. I am doing.",
+      "timestamp": 1737299127867,
+      "id": 43
+    },
+    {
+      "conversationId": 11,
+      "sender": {
+        "email": "test1@test.com",
+        "name": "test 1",
+        "id": 12
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "test 1",
+      "timestamp": 1737302741032,
+      "id": 44
+    },
+    {
+      "conversationId": 12,
+      "sender": {
+        "email": "test2@test.com",
+        "name": "test 2",
+        "id": 13
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "test 2",
+      "timestamp": 1737302878160,
+      "id": 45
+    },
+    {
+      "conversationId": 12,
+      "sender": {
+        "email": "test2@test.com",
+        "name": "test 2",
+        "id": 13
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "test 2",
+      "timestamp": 1737302887448,
+      "id": 46
+    },
+    {
+      "conversationId": 13,
+      "sender": {
+        "email": "test3@test.com",
+        "name": "test 3",
+        "id": 14
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "test 3",
+      "timestamp": 1737302930264,
+      "id": 47
+    },
+    {
+      "conversationId": 13,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "test3@test.com",
+        "name": "test 3",
+        "id": 14
+      },
+      "message": "test 4",
+      "timestamp": 1737305499669,
+      "id": 48
+    },
+    {
+      "conversationId": 7,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "jankarMahbub@programming-hero.com",
+        "password": "$2a$10$TWhN.9P1kUyyucKnvUsTRO1iKBVGJ9n5sPn8g9awXNPzRjEbMNw8y",
+        "name": "Jhankar Mahbub",
+        "id": 8
+      },
+      "message": "i am doing sir",
+      "timestamp": 1737305595972,
+      "id": 49
     }
   ]
 }

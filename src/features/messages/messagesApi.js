@@ -11,7 +11,7 @@ const getUserEmail = () => {
 export const messagesApi = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
         getMessages: builder.query({
-            query: (id) => `/messages?conversationId=${id}&_sort=timestamp&_order=desc&_page=1&_limit=${process.env.REACT_APP_MESSAGES_PER_PAGE}`,
+            query: (id) => `/messages?conversationId=${id}&_sort=timestamp&_order=desc&_page=1&_limit=4`,
             async onCacheEntryAdded(
                 args,
                 { updateCachedData, cacheDataLoaded, cacheEntryRemoved }
