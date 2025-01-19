@@ -4,7 +4,6 @@ import { useGetUserQuery } from "../../features/users/usersApi";
 import Error from "../ui/Error";
 import { useDispatch, useSelector } from "react-redux";
 import { conversationsApi, useAddConversationMutation, useEditConversationMutation } from "../../features/conversations/conversationsApi";
-
 export default function Modal({ open, control }) {
     const [to, setTo] = useState("");
     const [message, setMessage] = useState("");
@@ -14,14 +13,11 @@ export default function Modal({ open, control }) {
     const dispatch = useDispatch();
     const [responseError, setResponseError] = useState("");
     const [conversation, setConversation] = useState(undefined);
-
     const { data: participant } = useGetUserQuery(to, {
         skip: !userCheck,
     });
-
     const [addConversation, { isSuccess: isAddConversationSuccess }] = useAddConversationMutation();
     const [editConversation, { isSuccess: isEditConversationSuccess }] = useEditConversationMutation();
-
     useEffect(() => {
         if (participant?.length > 0 && participant[0].email !== myEmail) {
             // check conversation existance
@@ -40,7 +36,6 @@ export default function Modal({ open, control }) {
                 });
         }
     }, [participant, dispatch, myEmail, to]);
-
     // listen conversation add/edit success
     useEffect(() => {
         if (isAddConversationSuccess || isEditConversationSuccess) {
@@ -48,7 +43,6 @@ export default function Modal({ open, control }) {
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isAddConversationSuccess, isEditConversationSuccess]);
-
     const debounceHandler = (fn, delay) => {
         let timeoutId;
         return (...args) => {
@@ -58,7 +52,6 @@ export default function Modal({ open, control }) {
             }, delay);
         };
     };
-
     const doSearch = (value) => {
         if (isValideEmail(value)) {
             // check user API
@@ -66,12 +59,9 @@ export default function Modal({ open, control }) {
             setTo(value);
         }
     };
-
     const handleSearch = debounceHandler(doSearch, 500);
-
     const handleSubmit = (e) => {
         e.preventDefault();
-
         if (conversation?.length > 0) {
             // edit conversation
             editConversation({
@@ -97,7 +87,6 @@ export default function Modal({ open, control }) {
             });
         }
     };
-
 
     return (
         open && (
