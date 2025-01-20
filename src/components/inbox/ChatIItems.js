@@ -41,7 +41,6 @@ export default function ChatItems() {
                     totalCount /
                     Number(10)
                 ) > page;
-                console.log((totalCount / page));
             setHasMore(more);
         }
     }, [totalCount, page]);

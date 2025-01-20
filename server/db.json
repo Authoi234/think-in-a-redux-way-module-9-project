@@ -77,6 +77,12 @@
       "password": "$2a$10$ZGDFVTrbWWYkDfMWgUJtLeOKmLbU8JAY.WJ25KhVnXxW/m.971dxW",
       "name": "test 3",
       "id": 14
+    },
+    {
+      "email": "testing@test.com",
+      "password": "$2a$10$9xBz3Q9LTXsJ4LLtXItjpO2NZt8TwhHBS0Rnu7dw6n12umPBp1Ix2",
+      "name": "test",
+      "id": 15
     }
   ],
   "conversations": [
@@ -114,8 +120,8 @@
           "id": 1
         }
       ],
-      "message": "Making videos, Btw, I am fine, ",
-      "timestamp": 1737289150182
+      "message": "hi",
+      "timestamp": 1737395313721
     },
     {
       "participants": "jawadkhan.authoi@gmail.com-saad@learnwithsumit.com",
@@ -207,8 +213,8 @@
           "id": 8
         }
       ],
-      "message": "i am doing sir",
-      "timestamp": 1737305595972,
+      "message": "hello",
+      "timestamp": 1737395233425,
       "id": 7
     },
     {
@@ -221,12 +227,13 @@
         },
         {
           "email": "IssacAli@gmail.com",
+          "password": "$2a$10$MogFqT4yvqCqo73ul6yiXuyENlkAiDORLifPSPWP3Zgrx5t62k5xG",
           "name": "Newton",
           "id": 9
         }
       ],
-      "message": "means grade",
-      "timestamp": 1737299073227,
+      "message": "test",
+      "timestamp": 1737393815288,
       "id": 8
     },
     {
@@ -320,6 +327,25 @@
       "message": "test 4",
       "timestamp": 1737305499669,
       "id": 13
+    },
+    {
+      "participants": "testing@test.com-jawadkhan.authoi@gmail.com",
+      "users": [
+        {
+          "email": "testing@test.com",
+          "name": "test",
+          "id": 15
+        },
+        {
+          "email": "jawadkhan.authoi@gmail.com",
+          "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+          "name": "Authoi",
+          "id": 1
+        }
+      ],
+      "message": "hello, Authoi",
+      "timestamp": 1737396737922,
+      "id": 14
     }
   ],
   "messages": [
@@ -1120,6 +1146,379 @@
       "message": "i am doing sir",
       "timestamp": 1737305595972,
       "id": 49
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "btw, what are you doing right now",
+      "timestamp": 1737367780165,
+      "id": 50
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "Chatting with you",
+      "timestamp": 1737367875813,
+      "id": 51
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "before it?",
+      "timestamp": 1737367889789,
+      "id": 52
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "doing science equations and writing calculas",
+      "timestamp": 1737367912940,
+      "id": 53
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "nerd",
+      "timestamp": 1737367916180,
+      "id": 54
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "you are nerd",
+      "timestamp": 1737367918820,
+      "id": 55
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "you",
+      "timestamp": 1737367921556,
+      "id": 56
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "you",
+      "timestamp": 1737367922925,
+      "id": 57
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "fool",
+      "timestamp": 1737367924932,
+      "id": 58
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "fool",
+      "timestamp": 1737367926540,
+      "id": 59
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "I will fight back",
+      "timestamp": 1737367935852,
+      "id": 60
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "every action has its oposite and same reaction",
+      "timestamp": 1737368293214,
+      "id": 61
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "🤐",
+      "timestamp": 1737368310324,
+      "id": 62
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "😎",
+      "timestamp": 1737368320228,
+      "id": 63
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "😠😡🤬😤",
+      "timestamp": 1737368361900,
+      "id": 64
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "🤬😠😠👿",
+      "timestamp": 1737368393980,
+      "id": 65
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "message": "💩💩💩💩💩",
+      "timestamp": 1737368414437,
+      "id": 66
+    },
+    {
+      "conversationId": 8,
+      "sender": {
+        "email": "IssacAli@gmail.com",
+        "name": "Newton",
+        "id": 9
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "🤢🤮😵🥴",
+      "timestamp": 1737368430604,
+      "id": 67
+    },
+    {
+      "conversationId": 7,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "jankarMahbub@programming-hero.com",
+        "password": "$2a$10$TWhN.9P1kUyyucKnvUsTRO1iKBVGJ9n5sPn8g9awXNPzRjEbMNw8y",
+        "name": "Jhankar Mahbub",
+        "id": 8
+      },
+      "message": "test 1",
+      "timestamp": 1737394643816,
+      "id": 68
+    },
+    {
+      "conversationId": 7,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "jankarMahbub@programming-hero.com",
+        "password": "$2a$10$TWhN.9P1kUyyucKnvUsTRO1iKBVGJ9n5sPn8g9awXNPzRjEbMNw8y",
+        "name": "Jhankar Mahbub",
+        "id": 8
+      },
+      "message": "test 2",
+      "timestamp": 1737395221513,
+      "id": 69
+    },
+    {
+      "conversationId": 7,
+      "sender": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "name": "Authoi",
+        "id": 1
+      },
+      "receiver": {
+        "email": "jankarMahbub@programming-hero.com",
+        "password": "$2a$10$TWhN.9P1kUyyucKnvUsTRO1iKBVGJ9n5sPn8g9awXNPzRjEbMNw8y",
+        "name": "Jhankar Mahbub",
+        "id": 8
+      },
+      "message": "hello",
+      "timestamp": 1737395233425,
+      "id": 70
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "sumit@learnwithsumit.com",
+        "name": "Sumit Saha",
+        "id": 4
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "hi",
+      "timestamp": 1737395313721,
+      "id": 71
+    },
+    {
+      "conversationId": 14,
+      "sender": {
+        "email": "testing@test.com",
+        "name": "test",
+        "id": 15
+      },
+      "receiver": {
+        "email": "jawadkhan.authoi@gmail.com",
+        "password": "$2a$10$AMA78nIlvEq0cx3MKpLTa.ouBZR.LUsZETDL/vg7y1WrucZYv2OVO",
+        "name": "Authoi",
+        "id": 1
+      },
+      "message": "hello, Authoi",
+      "timestamp": 1737396737922,
+      "id": 72
     }
   ]
 }

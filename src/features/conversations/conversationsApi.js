@@ -23,7 +23,7 @@ export const conversationsApi = apiSlice.injectEndpoints({
           await cacheDataLoaded;
           socket.on("conversation", (data) => {
             updateCachedData((draft) => {
-              const conversation = draft.data.find(
+              const conversation = draft?.data.find(
                 (c) => c.id == data?.data?.id
               );
 
@@ -80,26 +80,40 @@ export const conversationsApi = apiSlice.injectEndpoints({
         body: data,
       }),
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
-        const conversation = await queryFulfilled;
-        if (conversation?.data?.id) {
-          // silent entry to message table
-          const users = arg.data.users;
-          const senderUser = users.find(
-            (user) => user.email === arg.sender
-          );
-          const receiverUser = users.find(
-            (user) => user.email !== arg.sender
-          );
+        try {
+          const conversation = await queryFulfilled;
+          if (conversation?.data?.id) {
+            // silent entry to message table
+            const users = arg.data.users;
+            const senderUser = users.find(
+              (user) => user.email === arg.sender
+            );
+            const receiverUser = users.find(
+              (user) => user.email !== arg.sender
+            );
 
-          dispatch(
-            messagesApi.endpoints.addMessage.initiate({
-              conversationId: conversation?.data?.id,
-              sender: senderUser,
-              receiver: receiverUser,
-              message: arg.data.message,
-              timestamp: arg.data.timestamp,
-            })
-          );
+            dispatch(
+              apiSlice.util.updateQueryData(
+                "getConversations",
+                arg.sender,
+                (draft) => {
+                  draft.data.push(conversation.data); // Add the new conversation at the beginning
+                  draft.totalCount = Number(draft.totalCount) + 1; // Increment total count
+                }
+              )
+            );
+            dispatch(
+              messagesApi.endpoints.addMessage.initiate({
+                conversationId: conversation?.data?.id,
+                sender: senderUser,
+                receiver: receiverUser,
+                message: arg.data.message,
+                timestamp: arg.data.timestamp,
+              })
+            );
+          }
+        } catch (error) {
+
         }
       },
     }),
@@ -117,7 +131,7 @@ export const conversationsApi = apiSlice.injectEndpoints({
             arg.sender,
             (draft) => {
               const draftConversation = draft.data.find(
-                (c) => c.id == arg.id
+                (c) => c.id == arg?.id
               );
               draftConversation.message = arg.data.message;
               draftConversation.timestamp = arg.data.timestamp;
@@ -154,7 +168,7 @@ export const conversationsApi = apiSlice.injectEndpoints({
                 "getMessages",
                 res.conversationId.toString(),
                 (draft) => {
-                  draft.push(res);
+                  draft.data.push(res);
                 }
               )
             );
